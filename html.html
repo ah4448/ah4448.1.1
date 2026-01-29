@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Laadukkaita Otoksia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --primary: #30004d;
+      --accent: #a3ffe2;
+      --bg: #28ff44;
+    }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: clamp(16px, 2.5vw, 18px);
+    color: #001026 ;
+  }
+
+  h1 {
+    font-size: clamp(4rem, 8vw, 6rem);
+    color: #30004d;
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    color: maroon;
+  }
+
+  img {
+    max width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  header {
+    background: var(--primary);
+    color: rgb(149, 216, 255);
+    padding: 1rem;
+  }
+
+
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: rgb(221, 121, 228);
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  footer {
+    background: var(--primary);
+    color: rgb(149, 216, 255);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+
+<header>
+     <nav class="nav">
+        <strong>LAADUKKAITA OTOKSIA</strong>
+        <div class="menu-btn" onclick="toggleMenu()"</div>
+        <div class="nav-links" id="navLinks">
+           <a href="#tervetuloa">Etusivu</a>
+           <a href="#jatke">Jatke</a>
+           <a href="#galleria">Galleria</a>
+           <a href="#tiedot">Tiedot</a>
+           <a href="#">Yhteys</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+  <section id="etusivu">
+    <h1>OIKEIN HYVÄÄ ILTAA</h1>
+    <p>
+      Tämä nettisivu sisältää kaikenlaisia otoksia, esimerkiksi maisemakuvia, luontokuvia, ruokakuvia ja mitä tahansa stock-kuvia JUURI SINULLE!!   Tämän voi siis selkeästi ottaa taiteellisena suorituksena, koska miten nämä otokset eivät olisi taidetta. Nettisivuni luontiprosessissa ei ole ollut tippaakaan sarkasmia mukana. Otamme Tekijöissä kaiken 100% vakavasti joka ikisessä mahdollisessa tilanteessa.
+    </p>
+  </section>
+
+  <section id="jatke">
+    <h2>Upea Kuvashow'mme</h2>
+    <p>
+      Tällä sivulla voit nauttia upeista, rauhottavista, sykähdyttävistä ja henkeä salpaavista otoksista ympäri suurta ja mystistä World Wide Web:ia. Ovatko verkkokalvosi varmasti valmiita kohtaamaan nämä otokset? Nämä kuvat ovat ympäri maapalloa, milloin mistäkin päin. Kuvat ovat satunnaisia ja vaihtuvat joka kerta, kun löydät itsesi takaisin tänne pyhäikölle. Joku voisi väittää, että tämä teksti on aivan turhaa enkä tarkoita mitään, mutta siitä voi olla montaa eri mieltä. Mielestäni tämä on tärkeää tietoa tästä häkellyttävästä ja uskomattoman tärkeästä nettisivusta. Tietenkin olen valmis hyväksymään faktan, että on erilaisia näkemyksiä asiaan. Olen täysin varma ettet ole ennen nähnyt moisia julkaisuja missään internetin kulmassa. Olen valmis lyömään vetoa asiasta, oletko sinä? 
+    </p>
+  </section>
+
+  <section id="galleria">
+    <h2>🏝KUVASHOW🏝</h2>
+    <div class="gallery">
+      
+      <img src= "https://picsum.photos/400/300?1" alt="Maisemakuva"
+      ><img src="https://picsum.photos/400/300?2" alt="Kaupunkikuva"
+      ><img src="https://picsum.photos/400/300?3" alt="Luontokuva"
+    
+    ></div>
+  </section>
+
+  <section id="Tiedot">
+    <h2>Tiedot</h2>
+    <div class="author">
+      <strong>NIMI:</strong> CONFIDENTIAL INFORMATION
+      <strong>TEHTÄVÄ:</strong> TOIMIVA NETTISIVU
+      <strong>SYY:</strong> OLI TEHTÄVÄ
+      <strong>AIKAJANA:</strong> 2025-2026
+      <strong>KUVAT:</strong> SATUNNAISET
+      <strong>LUOMISEN NAUTINTO:</strong> 7,97/10,00
+
+    </div>
+  </section>
+
+   <section id="OIKEASTI Tarkemmat Tiedot">
+    <h2>OIKEASTI Tarkemmat Tiedot</h2>
+    <div class="author">
+      <strong>NIMI:</strong> Elias Hakala
+      <strong>OPISKELIJANUMERO:</strong> AH4448
+      <strong>RYHMÄKOODI:</strong> HTK25
+      <strong>TESTAUSSELAIN:</strong> Mozilla Firefox
+      <strong>LAYOUTIN SYY:</strong> Yksinkertainen Tehdä
+  
+      
+    </div>
+  </section>
+</main>
+
+<footer>
+  TEKIJÄT 2026
+</footer>
+
+
+</body>
+</html>
